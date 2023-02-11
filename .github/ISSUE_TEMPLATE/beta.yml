@@ -1,0 +1,60 @@
+name: 申请收录
+description: 申请加入友链合集
+labels: ["申请收录"]
+assignees:
+  - YangguangZhou
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请在标题写“网站名称”！
+  - type: input
+    id: name
+    attributes:
+      label: 网站名称
+      description: 您的网站名称
+      placeholder: ex. Jerry Zhou的个人博客
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: 网站网址
+      description: |
+        必须是 **https** 网站；
+        如果你更新了域名，记得打开 issues 更新信息。
+      placeholder: ex. https://blog.jerryz.com.cn
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: 链接位置
+      description: |
+        放置Links链接的位置
+      placeholder: ex. 侧栏
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 网站主要内容
+      description: |
+        网站主要展示的内容类型
+    validations:
+      required: false
+  - type: checkboxes
+    id: checkagain
+    attributes:
+      label: 请确认以下事项
+      description: |
+        1. 我会自觉遵守国家有关法律法规。
+        2. 我的网站不包含如下内容：色情、暴力、血腥、低俗、引战等引人不适的内容、辱骂、挑衅、诽谤、反动等违反法律法规的内容、其它不适宜的内容。
+        3. 正常更新维护中（国内能够正常访问）。
+        4. 网站具有一定数量的优质内容。
+        5. 我的信息填写正确，若有变动如更新网址等会及时通知更正。
+        6. 我会自觉遵守国家有关法律法规。
+        7. 我已在网站中放置Links链接
+      options:
+        - label: 我已确认以上事项
+          required: true

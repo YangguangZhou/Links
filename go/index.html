@@ -1,0 +1,76 @@
+<!-- code by Jerry Zhou(jerryz.com.cn) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links-友链合集</title>
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="assets/links.js"></script>
+  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+  <link href="https://cdn.staticfile.org/izitoast/1.4.0/css/iziToast.min.css" rel="stylesheet">
+  <link href="https://npm.elemecdn.com/font6pro@6.0.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2954574_1ck6xsanalb.css">
+  <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+  <script>
+    if (document.domain !== 'links.jerryz.com.cn' && location.port === '') {
+      location.href = "https://links.jerryz.com.cn/go.html";
+    }
+  </script>
+</head>
+
+<body>
+  <!-- <div class="blink">
+    <a href="https://links.jerryz.com.cn" target="_blank"
+      title="Links-友链合集">正在前往下一个网站…<br />Going to the next website…</a>
+  </div> -->
+  <div class="blink">
+    <a href="https://links.jerryz.com.cn" target="_blank" title="Links-友链合集">
+      正在前往：<div id="WebsiteName"></div><br />网站链接：<div id="WebsiteUrl"></div>
+      <img id="visitors" style="margin-top: 20px;">
+    </a>
+  </div>
+  <script>
+    window.setTimeout(url, 0);
+    window.setTimeout(links, 3000);
+  </script>
+  <script src="https://cdn.staticfile.org/izitoast/1.4.0/js/iziToast.min.js">
+  </script>
+  <script>
+    iziToast.show({
+      title: 'Links',
+      message: '<a href="https://links.jerryz.com.cn" target="_blank">点击这里前往主页</a>。',
+      icon: 'iconfont icon-Links',
+      color: 'blue',
+      timeout: 2500
+    });
+    iziToast.show({
+      title: 'Issues',
+      message: '<a href="https://github.com/YangguangZhou/Links/issues/new?assignees=YangguangZhou&labels=申请收录&template=beta.yml" target="_blank">点击这里加入友链合集</a>。',
+      icon: 'fa-brands fa-github',
+      color: 'blue',
+      timeout: 2500
+    });
+  </script>
+  <div class="bottom heti">
+    <div class="home"><a href="https://links.jerryz.com.cn" target="_blank" style="color: #999;">点此前往主页</a></div>
+    <div class="counter">
+      <span id="busuanzi_value_page_pv"><i class="el-icon-loading"></i></span> Views |
+      <span id="busuanzi_value_site_uv"><i class="el-icon-loading"></i></span> Viewers
+    </div>
+    <div class="copyright">
+      Copyright &copy; 2023 <a href="https://jerryz.com.cn" target="_blank" style="color: #999;">Jerry Zhou</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/element-ui@2.11.1/lib/index.js"></script>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="https://analytics-ackee-2twab4e64-yangguangzhou.vercel.app/tracker.js"
+    data-ackee-server="https://analytics-ackee-2twab4e64-yangguangzhou.vercel.app"
+    data-ackee-domain-id="81347fc5-5db3-4f5b-b368-99e3476d6f42" data-ackee-opts='{ "detailed" : true}'></script>
+</body>
+
+</html>
