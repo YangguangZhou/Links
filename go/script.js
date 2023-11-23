@@ -4,7 +4,7 @@ fetch('../member.md')
     const lines = data.split('\n');
     let names = [];
     let urls = [];
-    let i = null;
+    let index = null;
     for (let i = 4; i < lines.length; i++) {
       if (lines[i] === '') break;
       const cells = lines[i].split('|');
@@ -13,7 +13,7 @@ fetch('../member.md')
     }
 
     function url() {
-      let i = Math.floor(Math.random() * urls.length);
+      index = Math.floor(Math.random() * urls.length);
       document.getElementById("WebsiteName").innerHTML = names[i];
       document.getElementById("WebsiteUrl").innerHTML = urls[i];
       document.getElementById("visitors").src = "https://visitor-badge.laobi.icu/badge?page_id=links-" + urls[i];
@@ -27,7 +27,7 @@ fetch('../member.md')
           urls.splice(urls.indexOf(origin), 1);
         }
       }
-      window.location = urls[i];
+      window.location = urls[index];
     }
     window.setTimeout(url, 0);
   });
