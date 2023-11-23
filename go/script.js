@@ -1,6 +1,6 @@
 import marked from 'marked';
 
-fetch('../member.md')
+fetch('https://links.jerryz.me/member.md')
   .then(response => response.text())
   .then(data => {
     const table = marked(data);
