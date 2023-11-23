@@ -14,9 +14,9 @@ fetch('../member.md')
 
     function url() {
       index = Math.floor(Math.random() * urls.length);
-      document.getElementById("WebsiteName").innerHTML = names[i];
-      document.getElementById("WebsiteUrl").innerHTML = urls[i];
-      document.getElementById("visitors").src = "https://visitor-badge.laobi.icu/badge?page_id=links-" + urls[i];
+      document.getElementById("WebsiteName").innerHTML = names[index];
+      document.getElementById("WebsiteUrl").innerHTML = urls[index];
+      document.getElementById("visitors").src = "https://visitor-badge.laobi.icu/badge?page_id=links-" + urls[index];
       window.setTimeout(links, 3000);
     }
 
