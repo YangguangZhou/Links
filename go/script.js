@@ -4,6 +4,7 @@ fetch('../member.md')
     const lines = data.split('\n');
     let names = [];
     let urls = [];
+    let i = null;
     for (let i = 4; i < lines.length; i++) {
       if (lines[i] === '') break;
       const cells = lines[i].split('|');
