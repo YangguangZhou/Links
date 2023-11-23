@@ -7,8 +7,8 @@ fetch('../member.md')
     for (let i = 4; i < lines.length; i++) {
       if (lines[i] === '') break;
       const cells = lines[i].split('|');
-      names.push(cells[1].trim());
-      urls.push(cells[2].trim());
+      names.push(cells[2].trim());
+      urls.push(cells[3].trim());
     }
 
     function url() {
@@ -20,18 +20,6 @@ fetch('../member.md')
     }
 
     function links() {
-      urls = urls
-        .filter((url) => url)
-        .map((url) => {
-          if (regHttps.test(url)) {
-            return https + url + suffix;
-          } else if (regHttp.test(url)) {
-            return http + url + suffix;
-          } else {
-            console.log("URL格式错误：" + url);
-            return;
-          }
-        });
       if (document.referrer) {
         const origin = new URL(document.referrer).origin;
         if (urls.includes(origin)) {
