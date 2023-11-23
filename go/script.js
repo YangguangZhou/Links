@@ -23,7 +23,7 @@ fetch('../member.md')
     function links() {
       urls = urls
         .filter((url) => url)
-        .map((url) => (reg.test(url) ? url + "?utm_source=links" : "Links error"));
+        .map((url) => url + "?utm_source=links");
       if (document.referrer) {
         const origin = new URL(document.referrer).origin;
         if (urls.includes(origin)) {
