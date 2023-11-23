@@ -1,14 +1,15 @@
-import marked from 'marked';
-
 fetch('../member.md')
   .then(response => response.text())
   .then(data => {
-    const html = marked(data);
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const rows = Array.from(doc.querySelectorAll('tr'));
-    const names = rows.map(row => row.cells[1].textContent);
-    const urls = rows.map(row => row.cells[2].textContent);
+    const lines = data.split('\n');
+    let names = [];
+    let urls = [];
+    for (let i = 4; i < lines.length; i++) {
+      if (lines[i] === '') break;
+      const cells = lines[i].split('|');
+      names.push(cells[1].trim());
+      urls.push(cells[2].trim());
+    }
 
     function url() {
       let i = Math.floor(Math.random() * urls.length);
