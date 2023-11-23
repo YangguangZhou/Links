@@ -1,12 +1,14 @@
 //code by Jerry Zhou(jerryz.com.cn)
 let i = null;
 const https = "https://";
-const reg = new RegExp("^" + https);
+const http = "https://";
 const suffix = "/?utm_source=links";
-const fs = require('fs');
-const markdownTable = require('markdown-table');
-const data = fs.readFileSync('../member.md', 'utf8');
-const table = markdownTable(data);
+import marked from 'marked';
+fetch('../member.md')
+  .then(response => response.text())
+  .then(data => {
+    const table = marked(data);
+  });
 const names = table.map(row => row[1]);
 const urls = table.map(row => row[2]);
 
@@ -15,16 +17,20 @@ function url() {
   document.getElementById("WebsiteName").innerHTML = names[i];
   document.getElementById("WebsiteUrl").innerHTML = urls[i];
   document.getElementById("visitors").src = "https://visitor-badge.laobi.icu/badge?page_id=links-" + urls[i];
+  window.setTimeout(links, 3000);
 }
 
 function links() {
   urls = urls
     .filter((url) => url)
     .map((url) => {
-      if (regHttps.test(url) || regHttp.test(url)) {
-        return url;
-      } else {
+      if (regHttps.test(url)) {
         return https + url + suffix;
+      } else if (regHttp.test(url)) {
+        return http + url + suffix;
+      } else {
+        console.log("URL格式错误：" + url);
+        return;
       }
     });
   if (document.referrer) {
