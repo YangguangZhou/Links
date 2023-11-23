@@ -14,21 +14,25 @@
 
 ## 介绍
 
-Links是一个友链合集，可以通过 https://links.jerryz.com.cn/go 进行成员间的随机跳转
-
-每当有人访问加入Links的网页时，点击页面中的“Links”按钮会**随机跳转**到另一个加入Links成员的网页。之后，再次点击网页上的“Links”或后退网页，将继续随机跳转到另一个加入Links的网页。
+Links是一个友链合集，通过 [Links](https://links.jerryz.com.cn) 可以进行成员间的随机跳转。点击页面中的“Links”按钮会**随机跳转**到另一个加入Links成员的网页。
 
 加入Links的网页越多，友链接力的规模越大，分享流量的规模也越大。
 
-## 运行方式
-
-`网页A → Links → 网页B → Links → 网页C → Links → 网页D → Links → 网页E → Links → 网页F …`
-
 ## 加入Links
 
-博客，主页，工具，导航等都可以，只要是乐于分享的网页就可以加入Links。
+博客，主页，工具，导航等都可以，只要是乐于分享并且满足要求的网页就可以加入Links。
 
-[加入Links](https://github.com/YangguangZhou/Links/issues/new?assignees=YangguangZhou&labels=申请收录&template=beta.yml)
+[点击这里申请加入Links](https://github.com/YangguangZhou/Links/issues/new?assignees=YangguangZhou&labels=申请收录&template=beta.yml)
+
+### 要求
+
+1. 我会自觉遵守国家有关法律法规。
+2. 我的网站不包含如下内容：色情、暴力、血腥、低俗、引战等引人不适的内容、辱骂、挑衅、诽谤、反动等违反法律法规的内容、其它不适宜的内容。
+3. 正常更新维护中（国内能够正常访问）。
+4. 网站具有一定数量的优质内容。
+5. 我的信息填写正确，若有变动如更新网址等会及时通知更正。
+6. 我会自觉遵守国家有关法律法规。
+7. 我已在网站中放置Links链接。
 
 ### 放置Links的链接与图标
 
@@ -50,29 +54,21 @@ Links是一个友链合集，可以通过 https://links.jerryz.com.cn/go 进行�
         url('//at.alicdn.com/t/c/font_3891026_wggdqlhqrxg.ttf?t=1676106315250') format('truetype');
   }
   ```
+
   #### Font Class
-  `//at.alicdn.com/t/c/font_3891026_wggdqlhqrxg.css`
+  ```
+  //at.alicdn.com/t/c/font_3891026_wggdqlhqrxg.css
+  ```
+
   #### Symbol
-  `//at.alicdn.com/t/c/font_3891026_wggdqlhqrxg.js`
+  ```
+  //at.alicdn.com/t/c/font_3891026_wggdqlhqrxg.js
+  ```
 
   图标名称为Links(蓝色)、Links-White(白色)、Links-Black(黑色)
 
 - 如需 Font Awesome ，推荐 `fa-solid fa-link` （[点我预览](https://fontawesome.com/icons/link?s=solid&f=classic)，其他图标库建议使用链接的图标或字母L的图标；
 - 如需 Emoji，推荐 `🔗`；
-
-### 要求
-
-1. 我会自觉遵守国家有关法律法规。
-2. 我的网站不包含如下内容：色情、暴力、血腥、低俗、引战等引人不适的内容、辱骂、挑衅、诽谤、反动等违反法律法规的内容、其它不适宜的内容。
-3. 正常更新维护中（国内能够正常访问）。
-4. 网站具有一定数量的优质内容。
-5. 我的信息填写正确，若有变动如更新网址等会及时通知更正。
-6. 我会自觉遵守国家有关法律法规。
-7. 我已在网站中放置Links链接
-
-### 申请
-
-**[点击这里申请](https://github.com/YangguangZhou/Links/issues/new?assignees=YangguangZhou&labels=申请收录&template=beta.yml)**
 
 ### 更新网站名称或域名
 
@@ -80,8 +76,8 @@ Links是一个友链合集，可以通过 https://links.jerryz.com.cn/go 进行�
 
 ## 成员列表
 
-[点此查看](https://github.com/YangguangZhou/Links/blob/master/member.md)成员列表，已有超500成员加入过Links。
+[点击这里查看](https://github.com/YangguangZhou/Links/blob/master/member.md)成员列表。
 
 ## 赞助
 
-https://pay.jerryz.com.cn
+如果你觉得Links对你有帮助，欢迎赞助：https://pay.jerryz.com.cn/sponsor

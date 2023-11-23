@@ -21,7 +21,6 @@ body:
     attributes:
       label: 网站网址
       description: |
-        必须是 **https** 网站；
         如果你更新了域名，记得打开 issues 更新信息。
       placeholder: ex. https://blog.jerryz.com.cn
     validations:
