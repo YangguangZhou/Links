@@ -1,3 +1,5 @@
+import marked from 'marked';
+
 fetch('../member.md')
   .then(response => response.text())
   .then(data => {

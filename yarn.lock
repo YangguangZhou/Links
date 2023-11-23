@@ -4,5 +4,5 @@
 
 marked@^10.0.0:
   version "10.0.0"
-  resolved "https://registry.npmmirror.com/marked/-/marked-10.0.0.tgz#7fe1805bb908433d760e2de0fcc8841a2b2d745c"
+  resolved "https://registry.npmmirror.com/marked/-/marked-10.0.0.tgz"
   integrity sha512-YiGcYcWj50YrwBgNzFoYhQ1hT6GmQbFG8SksnYJX1z4BXTHSOrz1GB5/Jm2yQvMg4nN1FHP4M6r03R10KrVUiA==
