@@ -21,12 +21,16 @@ fetch('../member.md')
     }
 
     function links() {
+      urls = urls
+        .filter((url) => url)
+        .map((url) => (reg.test(url) ? url + "?utm_source=links" : "Links error"));
       if (document.referrer) {
         const origin = new URL(document.referrer).origin;
         if (urls.includes(origin)) {
           urls.splice(urls.indexOf(origin), 1);
         }
       }
+      console(index + ":" + urls[index]);
       window.location = urls[index];
     }
     window.setTimeout(url, 0);
