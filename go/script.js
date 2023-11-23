@@ -1,6 +1,4 @@
-const marked = require('marked');
-
-fetch('https://links.jerryz.me/member.md')
+fetch('../member.md')
   .then(response => response.text())
   .then(data => {
     const html = marked(data);
