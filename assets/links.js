@@ -3,7 +3,6 @@ let i = null;
 const https = "https://";
 const http = "https://";
 const suffix = "/?utm_source=links";
-import marked from 'marked';
 fetch('../member.md')
   .then(response => response.text())
   .then(data => {
