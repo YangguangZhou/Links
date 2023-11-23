@@ -1,11 +1,14 @@
-import marked from 'marked';
+const marked = require('marked');
 
 fetch('https://links.jerryz.me/member.md')
   .then(response => response.text())
   .then(data => {
-    const table = marked(data);
-    const names = table.map(row => row[1]);
-    const urls = table.map(row => row[2]);
+    const html = marked(data);
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const rows = Array.from(doc.querySelectorAll('tr'));
+    const names = rows.map(row => row.cells[1].textContent);
+    const urls = rows.map(row => row.cells[2].textContent);
 
     function url() {
       let i = Math.floor(Math.random() * urls.length);
