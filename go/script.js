@@ -30,6 +30,7 @@ function url() {
         localStorage.setItem('lastUpdate', Date.now());
       });
   }
+  index = Math.floor(Math.random() * urls.length);
   if (document.referrer) {
     const origin = new URL(document.referrer).origin;
     console.log("Origin:" + origin);
@@ -39,7 +40,6 @@ function url() {
       }
     }
   }
-  index = Math.floor(Math.random() * urls.length);
   console.log(index + ":" + urls[index]);
   document.getElementById("WebsiteName").innerHTML = names[index];
   document.getElementById("WebsiteUrl").innerHTML = urls[index];
