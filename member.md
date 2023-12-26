@@ -5,6 +5,7 @@
 |0|Links-GitHub|https://github.com/YangguangZhou/Links/|
 |1|Jerry Zhou的个人博客|https://blog.jerryz.com.cn/|
 |2|Jerry Zhou的个人主页|https://jerryz.com.cn/|
+|3|Denth的洛谷主页|https://www.luogu.com.cn/user/1018524|
 
 # 加入
 
