@@ -30,6 +30,8 @@ function url() {
         localStorage.setItem('lastUpdate', Date.now());
       });
   }
+  console.log("Names:" + names);
+  console.log("Urls:" + urls);
   index = Math.floor(Math.random() * urls.length);
   if (document.referrer) {
     const origin = new URL(document.referrer).origin;
