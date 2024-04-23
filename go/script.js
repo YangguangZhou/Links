@@ -13,7 +13,7 @@ function url() {
     urls = JSON.parse(urls);
     console.log("Loaded from cache");
   } else {
-    fetch('../member.md')
+    fetch('https://cdn.jsdelivr.net/gh/YangguangZhou/Links@main/member.md')
       .then(response => response.text())
       .then(data => {
         const lines = data.split('\n');
